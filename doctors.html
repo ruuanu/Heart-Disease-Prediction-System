@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Doctors - NeoCardio</title>
+  <link rel="stylesheet" href="index.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- NavBar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">NeoCardio</a>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="AboutHeartDisease.html">About Heart Disease</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      <div class="auth-buttons" id="auth-buttons">
+        <a href="login.php" class="btn-login">Login</a>
+        <a href="registration.php" class="btn-register">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Doctors Section -->
+  <section class="doctors-section">
+    <div class="container">
+      <h1 class="section-title">Our Expert Cardiologists</h1>
+      <p class="section-subtitle">Dedicated professionals ensuring your heart health</p>
+
+      <div class="doctors-grid">
+
+        <div class="doctor-card">
+          <img src="Images/Fernando.jpg" alt="Dr. L Fernando" />
+          <h3>Dr. L Fernando</h3>
+          <p>Senior Cardiologist</p>
+        </div>
+
+        <div class="doctor-card">
+          <img src="Images/Stromy.png" alt="Dr. Stromy De Silva" />
+          <h3>Dr. Stromy De Silva</h3>
+          <p>Interventional Cardiologist</p>
+        </div>
+
+        <div class="doctor-card">
+          <img src="Images/Malindu.jpg" alt="Dr. Malindu R. Perera" />
+          <h3>Dr. Malindu R. Perera</h3>
+          <p>Pediatric Cardiologist</p>
+        </div>
+
+        <div class="doctor-card">
+          <img src="Images/Indika.jpg" alt="Dr. Indika Perera" />
+          <h3>Dr. Indika Perera</h3>
+          <p>Cardiac Surgeon</p>
+        </div>
+
+                <div class="doctor-card">
+          <img src="Images/Chathumi.jpg" alt="Dr. Chathumi Abhisheka" />
+          <h3>Dr. Chathumi Abhisheka</h3>
+          <p>Preventive Cardiologist</p>
+        </div>
+
+        <div class="doctor-card">
+          <img src="Images/doc6.jpg" alt="Dr. Chapa Sandeepani" />
+          <h3>Dr. Chapa Sandeepani</h3>
+          <p>Sports Cardiologist</p>
+        </div>
+
+        <div class="doctor-card">
+          <img src="Images/doc1.jpg" alt="Dr. Rajiv Perera" />
+          <h3>Dr. Rajiv Perera</h3>
+          <p>Critical Care Cardiologist</p>
+        </div>
+
+        <div class="doctor-card">
+          <img src="Images/doc8.jpg" alt="Dr. Amanda Liyanage" />
+          <h3>Dr. Amanda Liyanage</h3>
+          <p>Electrophysiologist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <!-- Logo & About -->
+      <div class="footer-section">
+        <h2 class="footer-logo">NeoCardio</h2>
+        <p>Your trusted partner in heart care.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="index.html#contact">Contact Us</a></li>
+          <li><a href="registration.php">Book Appointment</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Heart Care Road, Colombo, Sri Lanka</p>
+        <p><i class="fas fa-phone-alt"></i> +94 11 234 5678</p>
+        <p><i class="fas fa-envelope"></i> info@neocardio.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 NeoCardio. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle menu for mobile
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    const authButtons = document.getElementById('auth-buttons');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      authButtons.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

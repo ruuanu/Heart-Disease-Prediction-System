@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeoCardio Website</title>
+    <link rel="stylesheet" href="css\contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">NeoCardio</a>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#doctors">Doctors</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="auth-buttons" id="auth-buttons">
+          <a href="login.php" class="btn-login">Login</a>
+          <a href="registration.php" class="btn-register">Register</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="home" class="header">
+      <div class="overlay"></div>
+      <div class="container">
+        <h1>Contact Us</h1>
+      </div>
+    </header>
+
+    <!-- Contact Info & Map start-->
+    <section class="contact-info">
+      <div class="container">
+        <div class="info-box">
+          <h2>Our Location</h2>
+          <p>123 Heart Care Road,<br />Colombo, Sri Lanka</p>
+          <p><strong>Phone:</strong> ‪+94 11 234 5678‬</p>
+          <p><strong>Email:</strong> info@neocardio.com</p>
+          <a
+            href="https://www.google.com/maps?q=123+Heart+Care+Road,+Colombo,+Sri+Lanka"
+            target="_blank"
+            class="map-link"
+          >
+            <i class="fas fa-map-marker-alt"></i> View on Google Maps
+          </a>
+        </div>
+        <div class="map-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.45882326657!2d79.8064274!3d6.9270786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2595d3624b50b%3A0x93cfcb16c729e61b!2sColombo!5e0!3m2!1sen!2slk!4v1721458491320!5m2!1sen!2slk"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Info & Map end-->
+
+    <!--FAQ Section Start-->
+    <section class="faq-section">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">How can I contact NeoCardio?</div>
+        <div class="faq-answer">
+          You can reach us by phone, email, or by filling out the contact form
+          on this page. Our team will respond as soon as possible.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          What kind of heart care services do you provide?
+        </div>
+        <div class="faq-answer">
+          At NeoCardio, we offer comprehensive services to prevent, diagnose,
+          and treat heart conditions. This includes advanced diagnostics,
+          personalized treatment plans, and ongoing support from experienced
+          cardiac specialists.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Do I need a referral to schedule an appointment?
+        </div>
+        <div class="faq-answer">
+          While some services may require a referral from your primary care
+          physician, you are welcome to contact us directly to discuss your
+          needs. Our team will help guide you through the process.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Where are you located?</div>
+        <div class="faq-answer">
+          Please check our <a href="#">Contact Us Page</a> for addresses and
+          directions to the NeoCardio center.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">How soon can I get an appointment?</div>
+        <div class="faq-answer">
+          We aim to see new patients as quickly as possible. Contact us, and our
+          scheduling team will do their best to accommodate you at the earliest
+          available time.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Do you offer preventive heart health consultations?
+        </div>
+        <div class="faq-answer">
+          Yes! We believe prevention is key to heart health. You can book a
+          consultation to learn about lifestyle changes, risk assessments, and
+          personalized preventive care.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Who are your heart specialists?</div>
+        <div class="faq-answer">
+          Our team consists of highly experienced, board-certified cardiac
+          specialists who combine advanced technology with compassionate care.
+          You can learn more about them on our <a href="#">Doctors</a> page.
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const questions = document.querySelectorAll(".faq-question");
+      questions.forEach((q) => {
+        q.addEventListener("click", () => {
+          q.classList.toggle("active");
+          const answer = q.nextElementSibling;
+          answer.classList.toggle("open");
+        });
+      });
+    </script>
+    <br /><br /><br />
+
+    <!--FAQ Section end-->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <!-- Logo & About -->
+        <div class="footer-section">
+          <h2 class="footer-logo">NeoCardio</h2>
+          <p>Your trusted partner in heart care.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#doctors">Doctors</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+            <li><a href="registration.php">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 123 Heart Care Road, Colombo,
+            Sri Lanka
+          </p>
+          <p><i class="fas fa-phone-alt"></i> +94 11 234 5678</p>
+          <p><i class="fas fa-envelope"></i> info@neocardio.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 NeoCardio. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
